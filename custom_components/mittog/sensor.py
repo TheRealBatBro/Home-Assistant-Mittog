@@ -116,6 +116,7 @@ class MittogSensor(MittogEntity, SensorEntity):
         if index == 0:
             attrs["station"] = stations.name(coordinator.station)
             attrs["station_code"] = coordinator.station
+            attrs["direction"] = coordinator.direction
             attrs["towards"] = [stations.name(c) for c in sorted(coordinator.towards)]
             attrs["departures"] = [d.as_dict(data.now) for d in data.departures]
             attrs["updated"] = data.updated.isoformat() if data.updated else None

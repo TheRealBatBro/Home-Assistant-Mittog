@@ -3,8 +3,9 @@
 Live train departures from [mittog.dk](https://mittog.dk/da/departures/VNG/stog/) in Home Assistant: S-tog and regional/long-distance trains (DSB, Øresundståg, Lokaltog, Arriva …) for any Danish station.
 
 - **As many stations as you like**, each with its own device and sensors.
-- **Directions**: show only trains going your way, e.g. *Vinge → København H*. Add the same station more than once to follow both directions separately.
-- Filter by **line / train type** (A, B, C … or Re, IC, ICL …) and by **track**.
+- **Directions**: pick the direction you travel in from the directions trains actually leave your station in, e.g. *Vinge → København H*. Add the same station again to follow the other direction separately.
+- **Search**: one searchable list of every station and board, e.g. *Vinge (S-tog)* or *København H (Tog)*.
+- Optional filters (**must stop at**, **line / train type**, **track**). Each offers only what runs in your direction.
 - **Live push**: mittog.dk pushes a new board every 10–60 seconds over a WebSocket; nothing is polled. Stations watched with several directions share one connection.
 - Delays, cancellations, track changes and station notices ("Meddelelser") from mittog.dk.
 - No account or API key needed.
@@ -36,38 +37,56 @@ Requires Home Assistant **2025.10** or newer.
 
 ## 2. Add your first station
 
-1. Go to **Settings → Devices & services → + Add integration** and search for **Mittog**.
-2. **Board**: choose which departure board you want:
-   - **S-tog**: the Copenhagen S-trains (lines A, B, Bx, C, E, F, H).
-   - **Tog**: regional and long-distance trains (DSB Re/IC/ICL, Øresundståg, Lokaltog, Arriva, Nordjyske …).
+Go to **Settings → Devices & services → + Add integration** and search for **Mittog**. Adding a station takes three short steps.
 
-   Big stations such as København H, Østerport, Hellerup, Høje Taastrup and Køge have **both** boards. Pick the one for the train you take. You can add the other one later.
-3. **Station**: type the station name or part of it (e.g. `nør`), then press **Submit**.
-   - If exactly one station matches, you go straight on.
-   - If several match (e.g. *Nørrebro* and *Nørreport*), pick yours from the list.
-   - You can also type the **station code** from the mittog.dk address. See [Finding the right station](#finding-the-right-station).
-4. **Direction and filters**. The dialog shows how many departures are on the board right now.
-   - **Towards (direction)**: pick one or more stations *further along your route*. Only trains that stop at one of them are kept. Leave it empty for both directions. The list only contains stations that trains from here actually call at, and you can type to search it.
-   - **Lines / train types** (optional): e.g. `A` and `E`, or `IC` and `ICL`.
-   - **Tracks** (optional): e.g. `1` or `1, 2`.
-   - **Departures to keep**: how many upcoming departures go into the `departures` attribute (default 10).
-   - **Delay threshold**: the *Disruption* sensor turns on when a shown train is at least this many minutes late, or cancelled (default 3).
-   - **Hide cancelled departures**: leave cancelled trains out entirely instead of flagging them.
-5. **Submit**. You now have a *Mittog* integration with one station, e.g. **Vinge → København H**.
+### Step 1: Station
+
+Start typing the name of the station you travel **from**, e.g. `vinge`, and pick it from the list.
+
+Every station is listed once per departure board:
+
+- **(S-tog)**: the Copenhagen S-trains (lines A, B, Bx, C, E, F, H), e.g. *Vinge (S-tog)*.
+- **(Tog)**: regional and long-distance trains (DSB Re/IC/ICL, Øresundståg, Lokaltog, Arriva, Nordjyske …), e.g. *Roskilde (Tog)*.
+
+Big stations such as København H, Østerport, Nørreport, Hellerup, Høje Taastrup and Køge appear twice, as *København H (S-tog)* and *København H (Tog)*. Pick the one for the train you take. See also [Finding the right station](#finding-the-right-station).
+
+### Step 2: Direction
+
+Mittog reads the live board for your station and lists the directions trains actually leave in. Each direction is named after where the trains are going, for example at Vinge:
+
+- *Towards Klampenborg, Svanemøllen · via København H · next stop Ølstykke*
+- *Towards Frederikssund*
+- *Both directions*
+
+Pick the one you travel in. A direction includes **every** train going that way, including trains that turn back early. In the evening, for example, the C line from Vinge ends at Svanemøllen instead of Klampenborg, and those trains are still shown.
+
+### Step 3: Filters (all optional)
+
+These lists only contain what actually runs from your station **in the direction you picked**:
+
+- **Must stop at**: only trains that stop at one of these stations, in route order (nearest first). Use it to skip trains that end before your stop. Leave it empty in most cases.
+- **Lines / train types**: e.g. `A` and `E`, or `IC` and `ICL`.
+- **Tracks**: only trains from these tracks.
+- **Departures to keep**: how many upcoming departures go into the `departures` attribute (default 10).
+- **Delay threshold**: the *Disruption* sensor turns on when a shown train is at least this many minutes late, or cancelled (default 3).
+- **Hide cancelled departures**: leave cancelled trains out entirely instead of flagging them.
+
+Press **Submit**. You now have a *Mittog* integration with one station, e.g. **Vinge → København H**.
+
+> The direction and filter choices come from the trains on the board right now (usually the next hour). At night, when the board can be empty, the directions are shown as *Direction 1 / Direction 2*. You can pick one anyway, or come back during the day and edit the station with the pencil.
 
 ## 3. Add more stations or the other direction
 
 Open **Settings → Devices & services → Mittog** and click **+ Add station** (top right). The steps are the same as above.
 
-Examples:
-
 | You want | Add |
 | --- | --- |
-| Your morning train into town | S-tog · *Vinge* · towards *København H* |
-| The way home | S-tog · *København H* · towards *Vinge* |
-| Both directions at your station, separately | *Vinge* towards *København H*, then *Vinge* again towards *Frederikssund* |
-| Only IC trains to Odense from Copenhagen | Tog · *København H* · towards *Odense* · lines `IC`, `ICL` |
-| Everything from one platform | Tog · *Roskilde* · tracks `1` |
+| Your morning train into town | *Vinge (S-tog)* → *Towards … via København H* |
+| The way home | *København H (S-tog)* → *Towards Frederikssund …* |
+| Both directions at your station, as separate sensors | *Vinge (S-tog)* twice, once per direction |
+| Only IC/ICL trains west from Copenhagen | *København H (Tog)* → the direction towards Odense/Fredericia → lines `IC`, `ICL` |
+| Only trains that reach your stop | Your station → your direction → **Must stop at** your stop |
+| Everything from one platform | *Roskilde (Tog)* → *Both directions* → track `1` |
 
 Each station becomes its own device with its own sensors. Adding the exact same station, direction and filters twice is refused.
 
@@ -75,11 +94,13 @@ Each station becomes its own device with its own sensors. Adding the exact same 
 **Remove** a station: click **⋮** next to it → **Delete**.
 **Change the station itself**: delete it and add the new one.
 
+> **Upgrading from 1.0.0?** Stations added with 1.0.0 used "Towards" stations as the direction. That drops trains that turn back early, e.g. *Vinge → Klampenborg* showed nothing in the evening. Click the pencil, pick the direction and press Submit: the old towards filter is removed automatically.
+
 ---
 
 ## Finding the right station
 
-**By name.** Just type part of the name in the Station step. The list only contains stations that have the board you chose, so if you get *"No station on this board matches"*, try the other board (S-tog vs Tog). For example, Aalborg has no S-tog board.
+**By name.** Type part of the name in the Station field; the list filters as you type and shows which board each entry is. If a station is missing with *(S-tog)*, it has no S-tog board. Aalborg, for example, only exists as *Aalborg (Tog)*.
 
 **By the mittog.dk address.** Open [mittog.dk](https://mittog.dk), find your station and look at the address bar:
 
@@ -89,9 +110,9 @@ https://mittog.dk/da/departures/VNG/stog/
                         station code  board (stog = S-tog, tog = Tog)
 ```
 
-Type the code (here `VNG`, which is **Vinge**) into the Station field. Codes are not always obvious (Nørreport is `KN`, København H is `KH`, Østerport is `KK`), so the address is handy when a name search gives several similar results.
+Type the code (here `VNG`, which is **Vinge**) into the Station field and choose **Add custom item "VNG"**. Codes are not always obvious (Nørreport is `KN`, København H is `KH`, Østerport is `KK`). A code that exists on both boards (like `KH`) picks the S-tog board, so use the list entry *København H (Tog)* for regional trains.
 
-**Picking the direction.** Choose a station your train passes *after* yours, not the one you are at. Where lines split, choose a station on your branch. For example, from København H towards *Hillerød* gives you the A and E trains to Hillerød, but not the B trains to Farum. When several stations are picked, a train only has to stop at one of them.
+**Picking the direction.** The direction list comes from the live board, so you choose from what is actually there. If you care about one particular stop further along a line that splits, pick the direction and then add that stop under **Must stop at**. For example, *København H (S-tog)* → *Towards Hillerød …* → must stop at *Hillerød* gives you the A and E trains that run all the way.
 
 <details>
 <summary>All S-tog stations and their codes</summary>
@@ -198,7 +219,7 @@ Each station (device) gets these entities. Entity IDs follow the device name, e.
 
 | Entity | State | Useful attributes |
 | --- | --- | --- |
-| **Next departure** (*Næste afgang*) | Time of the next train that is not cancelled (timestamp, delays included) | `line`, `destination`, `track`, `delay`, `minutes`, `cancelled`, `scheduled`, `expected`, `train_number`, `operator`, `color`, `via`, `original_track` (track change), and **`departures`**: the list of upcoming departures, each with the same fields |
+| **Next departure** (*Næste afgang*) | Time of the next train that is not cancelled (timestamp, delays included) | `line`, `destination`, `track`, `delay`, `minutes`, `cancelled`, `scheduled`, `expected`, `train_number`, `operator`, `color`, `via`, `original_track` (track change), `direction` (`UP`/`DOWN`, or empty for both), and **`departures`**: the list of upcoming departures, each with the same fields |
 | **Following departure** (*Efterfølgende afgang*) | Time of the train after that | same per-train fields |
 | **Minutes to departure** (*Minutter til afgang*) | Whole minutes until the next train | |
 | **Delay** (*Forsinkelse*) | Delay of the next train, in minutes | |
@@ -259,9 +280,9 @@ actions:
 
 ## Troubleshooting
 
-- **Sensors are *unknown***: no train matches your direction and filters right now (for example at night, or because of a filter that is too tight). Check the unfiltered board on mittog.dk: the device page has a *Visit* link to it.
+- **Sensors are *unknown***: no train on the board matches your direction and filters right now (for example at night, or because a filter is too tight). The board covers roughly the next hour. Check the unfiltered board on mittog.dk: the device page has a *Visit* link to it.
 - **Sensors are *unavailable***: the feed has been silent for 3 minutes. Check *Live connection*. It reconnects by itself, backing off up to 5 minutes.
-- **A train you expected is missing**: check the direction. The train must stop at one of your *Towards* stations *after* your station. Trains that terminate at your station are arrivals and are never shown.
+- **A train you expected is missing**: check the direction and, if you set one, the *Must stop at* filter. With *Must stop at*, a train is only shown if it stops at one of those stations after yours. Trains that turn back early don't, so leave that filter empty unless you need it. Trains that terminate at your station are arrivals and are never shown.
 - **Debug logging**:
 
   ```yaml

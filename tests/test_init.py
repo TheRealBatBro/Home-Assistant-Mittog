@@ -29,47 +29,61 @@ def _sub(entry, title: str):
 
 async def test_two_directions_one_socket(hass: HomeAssistant) -> None:
     entry = make_entry(
-        station_data("stog", "VNG", towards=["KH"]),
-        station_data("stog", "VNG", towards=["FS"]),
+        station_data("stog", "VNG", direction="UP"),
+        station_data("stog", "VNG", direction="DOWN"),
     )
     entry.add_to_hass(hass)
     assert await hass.config_entries.async_setup(entry.entry_id)
     await hass.async_block_till_done()
     assert len(entry.runtime_data.streams) == 1
-    to_kh = _sub(entry, "Vinge → København H")
-    to_fs = _sub(entry, "Vinge → Frederikssund")
+    up = _sub(entry, "Vinge UP")
+    down = _sub(entry, "Vinge DOWN")
 
-    assert hass.states.get(_eid(hass, to_kh, "next_departure")).state == STATE_UNAVAILABLE
+    assert hass.states.get(_eid(hass, up, "next_departure")).state == STATE_UNAVAILABLE
 
     await push(hass, entry, "stog", "VNG", "stog_vng.json")
 
-    state = hass.states.get(_eid(hass, to_kh, "next_departure"))
+    state = hass.states.get(_eid(hass, up, "next_departure"))
     assert state.state == "2026-09-29T16:46:00+00:00"
     assert state.attributes["destination"] == "Klampenborg"
     assert state.attributes["line"] == "C"
-    assert state.attributes["towards"] == ["København H"]
-    assert len(state.attributes["departures"]) == 3
-    assert all(d["destination"] != "Frederikssund" for d in state.attributes["departures"])
-    second = hass.states.get(_eid(hass, to_kh, "second_departure"))
+    assert state.attributes["direction"] == "UP"
+    # The train turning back at Svanemøllen is going the same way, so it counts.
+    assert [d["destination"] for d in state.attributes["departures"]] == [
+        "Klampenborg",
+        "Klampenborg",
+        "Svanemøllen",
+    ]
+    second = hass.states.get(_eid(hass, up, "second_departure"))
     assert second.state == "2026-09-29T17:12:00+00:00"
-    assert state.attributes["departures"][2]["destination"] == "Svanemøllen"
 
-    assert hass.states.get(_eid(hass, to_fs, "next_departure")).attributes["destination"] == "Frederikssund"
-    assert hass.states.get(_eid(hass, to_fs, "minutes_until")).state == "2"
-    assert hass.states.get(_eid(hass, to_kh, "disruption")).state == STATE_OFF
-    assert hass.states.get(_eid(hass, to_kh, "connection")).state == STATE_ON
+    assert hass.states.get(_eid(hass, down, "next_departure")).attributes["destination"] == "Frederikssund"
+    assert hass.states.get(_eid(hass, down, "minutes_until")).state == "2"
+    assert hass.states.get(_eid(hass, up, "disruption")).state == STATE_OFF
+    assert hass.states.get(_eid(hass, up, "connection")).state == STATE_ON
 
     devices = dr.async_entries_for_config_entry(dr.async_get(hass), entry.entry_id)
-    assert sorted(d.name for d in devices) == ["Vinge → Frederikssund", "Vinge → København H"]
+    assert sorted(d.name for d in devices) == ["Vinge DOWN", "Vinge UP"]
 
     diag = await async_get_config_entry_diagnostics(hass, entry)
     assert diag["streams"][0]["listeners"] == 2
 
 
+async def test_stops_at_filter_still_works(hass: HomeAssistant) -> None:
+    """Old-style subentries (towards = must stop at) keep working."""
+    entry = make_entry(station_data("stog", "VNG", towards=["KL"]))
+    entry.add_to_hass(hass)
+    assert await hass.config_entries.async_setup(entry.entry_id)
+    await push(hass, entry, "stog", "VNG", "stog_vng.json")
+    (sub,) = entry.subentries.values()
+    deps = hass.states.get(_eid(hass, sub, "next_departure")).attributes["departures"]
+    assert [d["destination"] for d in deps] == ["Klampenborg", "Klampenborg"]
+
+
 async def test_filters_delay_and_staleness(hass: HomeAssistant, frozen) -> None:
     entry = make_entry(
         station_data("tog", "KH", lines=["IC"]),
-        station_data("tog", "KH", tracks="1"),
+        station_data("tog", "KH", tracks=["1"]),
     )
     entry.add_to_hass(hass)
     assert await hass.config_entries.async_setup(entry.entry_id)

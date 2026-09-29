@@ -15,8 +15,13 @@ SERVICES: Final = (SERVICE_STOG, SERVICE_TOG)
 
 SUBENTRY_STATION: Final = "station"
 
+# Track direction as reported by the feed; constant for a station, whatever the destination.
+DIRECTIONS: Final = ("UP", "DOWN")
+BOTH_DIRECTIONS: Final = "both"
+
 CONF_SERVICE: Final = "service"
 CONF_STATION: Final = "station"
+CONF_DIRECTION: Final = "direction"
 CONF_TOWARDS: Final = "towards"
 CONF_LINES: Final = "lines"
 CONF_TRACKS: Final = "tracks"

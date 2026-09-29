@@ -23,6 +23,7 @@ from custom_components.mittog.api import TZ, BoardStream, parse_board
 from custom_components.mittog.config_flow import title_for, unique_id_for
 from custom_components.mittog.const import (
     CONF_DELAY_THRESHOLD,
+    CONF_DIRECTION,
     CONF_HIDE_CANCELLED,
     CONF_LINES,
     CONF_MAX_DEPARTURES,
@@ -66,6 +67,7 @@ def station_data(service: str, station: str, **extra: Any) -> dict[str, Any]:
     data = {
         CONF_SERVICE: service,
         CONF_STATION: station,
+        CONF_DIRECTION: "both",
         CONF_TOWARDS: [],
         CONF_LINES: [],
         CONF_TRACKS: "",
@@ -80,7 +82,8 @@ def station_data(service: str, station: str, **extra: Any) -> dict[str, Any]:
 def subentry(data: dict[str, Any]) -> ConfigSubentryData:
     return ConfigSubentryData(
         subentry_type=SUBENTRY_STATION,
-        title=title_for(data[CONF_SERVICE], data[CONF_STATION], data[CONF_TOWARDS]),
+        title=title_for(data[CONF_SERVICE], data[CONF_STATION], data[CONF_TOWARDS])
+        + ("" if data.get(CONF_DIRECTION, "both") == "both" else f" {data[CONF_DIRECTION]}"),
         unique_id=unique_id_for(data),
         data=data,
     )

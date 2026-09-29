@@ -17,7 +17,9 @@ from homeassistant.util import dt as dt_util
 from . import stations
 from .api import Board, BoardStream, Departure, Notice, upcoming
 from .const import (
+    BOTH_DIRECTIONS,
     CONF_DELAY_THRESHOLD,
+    CONF_DIRECTION,
     CONF_HIDE_CANCELLED,
     CONF_LINES,
     CONF_MAX_DEPARTURES,
@@ -105,6 +107,8 @@ class StationCoordinator(DataUpdateCoordinator[StationData]):
         data = subentry.data
         self.service: str = data[CONF_SERVICE]
         self.station: str = data[CONF_STATION]
+        direction = data.get(CONF_DIRECTION) or BOTH_DIRECTIONS
+        self.direction: str | None = None if direction == BOTH_DIRECTIONS else direction
         self.towards = {stations.normalize(c) for c in parse_filter(data.get(CONF_TOWARDS))}
         self.lines = {v.casefold() for v in parse_filter(data.get(CONF_LINES))}
         self.tracks = {v.casefold() for v in parse_filter(data.get(CONF_TRACKS))}
@@ -115,6 +119,8 @@ class StationCoordinator(DataUpdateCoordinator[StationData]):
         self._unsubs: list[CALLBACK_TYPE] = []
 
     def matches(self, departure: Departure) -> bool:
+        if self.direction and departure.direction != self.direction:
+            return False
         if self.towards and not departure.calls_at(self.towards):
             return False
         if self.lines and departure.line.casefold() not in self.lines and departure.product.casefold() not in self.lines:
@@ -181,6 +187,7 @@ class StationCoordinator(DataUpdateCoordinator[StationData]):
         return {
             "service": self.service,
             "station": self.station,
+            "direction": self.direction,
             "towards": sorted(self.towards),
             "lines": sorted(self.lines),
             "tracks": sorted(self.tracks),
