@@ -1,0 +1,183 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a station",
+        "description": "Pick which departure board on mittog.dk you want: the S-tog board or the regional/long-distance train board (Tog). Big stations such as København H have both.",
+        "data": {
+          "service": "Board"
+        },
+        "data_description": {
+          "service": "S-tog = Copenhagen S-trains (lines A, B, Bx, C, E, F, H). Tog = DSB regional, InterCity, Øresundståg, Lokaltog, Arriva, etc."
+        }
+      },
+      "station": {
+        "title": "Choose station",
+        "description": "Type the station name, or part of it (e.g. \"Nørre\"). You can also type the station code from the mittog.dk address, e.g. VNG from mittog.dk/da/departures/VNG/stog/.",
+        "data": {
+          "query": "Station name or code"
+        },
+        "data_description": {
+          "query": "If several stations match, you get to pick one on the next page."
+        }
+      },
+      "pick_station": {
+        "title": "Pick the station",
+        "description": "{count} stations match. Pick yours:",
+        "data": {
+          "station": "Station"
+        }
+      },
+      "direction": {
+        "title": "Direction and filters for {station}",
+        "description": "{count} departures are on the board right now. Leave everything empty to see all departures. Pick one or more stations under **Towards** to only keep trains that stop there, e.g. towards København H. Add the same station again later to track the other direction separately.",
+        "data": {
+          "towards": "Towards (direction)",
+          "lines": "Lines / train types",
+          "tracks": "Tracks",
+          "max_departures": "Departures to keep",
+          "delay_threshold": "Delay threshold",
+          "hide_cancelled": "Hide cancelled departures"
+        },
+        "data_description": {
+          "towards": "Only show trains that call at one of these stations after this one. Empty = both directions.",
+          "lines": "Only these lines (S-tog: A, B, C …) or train types (Re, IC, ICL …). Empty = all.",
+          "tracks": "Comma-separated track numbers, e.g. 1, 2. Empty = all.",
+          "max_departures": "How many upcoming departures are kept in the departures attribute.",
+          "delay_threshold": "The disruption sensor turns on when a shown departure is this late (or cancelled).",
+          "hide_cancelled": "Leave cancelled trains out entirely instead of flagging them."
+        }
+      }
+    },
+    "error": {
+      "unknown_station": "Unknown station. Pick one from the list.",
+      "towards_self": "A station cannot be its own direction.",
+      "no_match": "No station on this board matches. Check the spelling, or try the other board (S-tog / Tog)."
+    },
+    "abort": {
+      "already_configured_hub": "Mittog is already set up. Add more stations with the **Add station** button on the Mittog integration page.",
+      "single_instance_allowed": "Mittog is already set up. Add more stations with the **Add station** button on the Mittog integration page."
+    }
+  },
+  "config_subentries": {
+    "station": {
+      "entry_type": "Station",
+      "initiate_flow": {
+        "user": "Add station"
+      },
+      "step": {
+        "user": {
+          "title": "Add a station",
+          "description": "Pick which departure board on mittog.dk you want: the S-tog board or the regional/long-distance train board (Tog). Big stations such as København H have both.",
+          "data": {
+            "service": "Board"
+          },
+          "data_description": {
+            "service": "S-tog = Copenhagen S-trains (lines A, B, Bx, C, E, F, H). Tog = DSB regional, InterCity, Øresundståg, Lokaltog, Arriva, etc."
+          }
+        },
+        "station": {
+          "title": "Choose station",
+          "description": "Type the station name, or part of it (e.g. \"Nørre\"). You can also type the station code from the mittog.dk address, e.g. VNG from mittog.dk/da/departures/VNG/stog/.",
+          "data": {
+            "query": "Station name or code"
+          },
+          "data_description": {
+            "query": "If several stations match, you get to pick one on the next page."
+          }
+        },
+        "pick_station": {
+          "title": "Pick the station",
+          "description": "{count} stations match. Pick yours:",
+          "data": {
+            "station": "Station"
+          }
+        },
+        "direction": {
+          "title": "Direction and filters for {station}",
+          "description": "{count} departures are on the board right now. Leave everything empty to see all departures. Pick one or more stations under **Towards** to only keep trains that stop there, e.g. towards København H. Add the same station again later to track the other direction separately.",
+          "data": {
+            "towards": "Towards (direction)",
+            "lines": "Lines / train types",
+            "tracks": "Tracks",
+            "max_departures": "Departures to keep",
+            "delay_threshold": "Delay threshold",
+            "hide_cancelled": "Hide cancelled departures"
+          },
+          "data_description": {
+            "towards": "Only show trains that call at one of these stations after this one. Empty = both directions.",
+            "lines": "Only these lines (S-tog: A, B, C …) or train types (Re, IC, ICL …). Empty = all.",
+            "tracks": "Comma-separated track numbers, e.g. 1, 2. Empty = all.",
+            "max_departures": "How many upcoming departures are kept in the departures attribute.",
+            "delay_threshold": "The disruption sensor turns on when a shown departure is this late (or cancelled).",
+            "hide_cancelled": "Leave cancelled trains out entirely instead of flagging them."
+          }
+        },
+        "reconfigure": {
+          "title": "Change direction and filters for {station}",
+          "description": "{count} departures are on the board right now. Leave everything empty to see all departures. Pick one or more stations under **Towards** to only keep trains that stop there, e.g. towards København H. Add the same station again later to track the other direction separately.",
+          "data": {
+            "towards": "Towards (direction)",
+            "lines": "Lines / train types",
+            "tracks": "Tracks",
+            "max_departures": "Departures to keep",
+            "delay_threshold": "Delay threshold",
+            "hide_cancelled": "Hide cancelled departures"
+          },
+          "data_description": {
+            "towards": "Only show trains that call at one of these stations after this one. Empty = both directions.",
+            "lines": "Only these lines (S-tog: A, B, C …) or train types (Re, IC, ICL …). Empty = all.",
+            "tracks": "Comma-separated track numbers, e.g. 1, 2. Empty = all.",
+            "max_departures": "How many upcoming departures are kept in the departures attribute.",
+            "delay_threshold": "The disruption sensor turns on when a shown departure is this late (or cancelled).",
+            "hide_cancelled": "Leave cancelled trains out entirely instead of flagging them."
+          }
+        }
+      },
+      "error": {
+        "unknown_station": "Unknown station. Pick one from the list.",
+        "towards_self": "A station cannot be its own direction.",
+        "no_match": "No station on this board matches. Check the spelling, or try the other board (S-tog / Tog)."
+      },
+      "abort": {
+        "already_configured": "This station is already added with exactly these filters.",
+        "reconfigure_successful": "Station updated."
+      }
+    }
+  },
+  "selector": {
+    "service": {
+      "options": {
+        "stog": "S-tog",
+        "tog": "Tog (regional & long-distance)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_departure": {
+        "name": "Next departure"
+      },
+      "second_departure": {
+        "name": "Following departure"
+      },
+      "minutes_until": {
+        "name": "Minutes to departure"
+      },
+      "delay": {
+        "name": "Delay"
+      },
+      "notices": {
+        "name": "Notices"
+      }
+    },
+    "binary_sensor": {
+      "disruption": {
+        "name": "Disruption"
+      },
+      "connection": {
+        "name": "Live connection"
+      }
+    }
+  }
+}

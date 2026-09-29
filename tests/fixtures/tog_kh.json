@@ -1,0 +1,3568 @@
+{
+ "data": {
+  "Id": "155722b5-27c0-4d88-a138-eaf190bd2cde",
+  "Trains": [
+   {
+    "TrainId": "50850",
+    "PublicTrainId": "50850",
+    "TOC": "DSB",
+    "Product": "IC",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:31:00",
+    "ScheduleTimeArrival": "29-09-2026 18:28:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:31:00",
+    "EstimatedTimeArrival": "29-09-2026 18:42:39",
+    "EstimatedTimeDeparture": "29-09-2026 18:45:35",
+    "DelayTime": "29-09-2026 18:45:35",
+    "TargetStation": [],
+    "TrackCurrent": "1",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:47:41",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:50:41",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HGL",
+        "ExpectedDateTime": "29-09-2026 18:54:11",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HGL",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "OD",
+      "UnitType": "ER",
+      "UnitId": "ER-11",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:47:41",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:50:41",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HGL",
+        "ExpectedDateTime": "29-09-2026 18:54:11",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HGL",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "ES",
+      "UnitType": "ER",
+      "UnitId": "ER-21",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:41:20",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "DOWN",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "54250",
+    "PublicTrainId": "54250",
+    "TOC": "DSB",
+    "Product": "RØ",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:37:00",
+    "ScheduleTimeArrival": "29-09-2026 18:34:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:37:00",
+    "EstimatedTimeArrival": "29-09-2026 18:42:07",
+    "EstimatedTimeDeparture": "29-09-2026 18:44:08",
+    "DelayTime": "29-09-2026 18:44:08",
+    "TargetStation": [],
+    "TrackCurrent": "3",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:46:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:49:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 18:54:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 18:59:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:03:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:07:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:10:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:14:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:17:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:21:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:24:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:27:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:32:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "NÆ",
+      "UnitType": "ABS",
+      "UnitId": "ABS-11",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:46:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:49:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 18:54:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 18:59:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:03:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:07:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:10:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:14:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:17:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:21:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:24:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:27:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:32:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "NÆ",
+      "UnitType": "BK",
+      "UnitId": "BK-12",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:46:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:49:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 18:54:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 18:59:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:03:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:07:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:10:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:14:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:17:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:21:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:24:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:27:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:32:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "NÆ",
+      "UnitType": "B",
+      "UnitId": "B-13",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:46:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:49:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 18:54:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 18:59:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:03:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:07:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:10:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:14:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:17:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:21:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:24:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:27:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:32:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "NÆ",
+      "UnitType": "B",
+      "UnitId": "B-14",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:46:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:49:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 18:54:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 18:59:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:03:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:07:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:10:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:14:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:17:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:21:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:24:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:27:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:32:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "NÆ",
+      "UnitType": "B",
+      "UnitId": "B-15",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:46:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:49:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 18:54:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 18:59:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:03:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:07:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:10:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:14:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:17:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:21:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:24:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:27:42",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:32:12",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "NÆ",
+      "UnitType": "EB",
+      "UnitId": "EB-1",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:40:39",
+    "TrainDeparted": "29-09-2026 18:44:11",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "DOWN",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "2026-09-29T17:46:19.2912225+02:00",
+    "AwaitsTimeEndTime": "2026-09-29T17:51:51.4511602+02:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "1116",
+    "PublicTrainId": "1116",
+    "TOC": "VR Øresund AB",
+    "Product": "ØP",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:44:00",
+    "ScheduleTimeArrival": "29-09-2026 18:41:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:44:00",
+    "EstimatedTimeArrival": "29-09-2026 18:42:10",
+    "EstimatedTimeDeparture": "29-09-2026 18:45:09",
+    "DelayTime": "29-09-2026 18:45:09",
+    "TargetStation": [],
+    "TrackCurrent": "6",
+    "TrackPrevious": "7",
+    "TrackOriginal": "6",
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "ØRE",
+        "ExpectedDateTime": "29-09-2026 18:52:08",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TÅT",
+        "ExpectedDateTime": "29-09-2026 18:54:38",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "CPH",
+        "ExpectedDateTime": "29-09-2026 18:58:08",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HIE",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%TRI",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%MC",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%BLV",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LU",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%E",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HÖ",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HM",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "%HM",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "ETS",
+      "UnitId": "ETS-301",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "CPH",
+      "ViaStations": [
+       "CPH",
+       "%MC"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "ØRE",
+        "ExpectedDateTime": "29-09-2026 18:52:08",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TÅT",
+        "ExpectedDateTime": "29-09-2026 18:54:38",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "CPH",
+        "ExpectedDateTime": "29-09-2026 18:58:08",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HIE",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%TRI",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%MC",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%BLV",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LU",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%E",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HÖ",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HM",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%CR",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "%CR",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "ETS",
+      "UnitId": "ETS-201",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "CPH",
+      "ViaStations": [
+       "CPH",
+       "%MC"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "ØRE",
+        "ExpectedDateTime": "29-09-2026 18:52:08",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TÅT",
+        "ExpectedDateTime": "29-09-2026 18:54:38",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "CPH",
+        "ExpectedDateTime": "29-09-2026 18:58:08",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HIE",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%TRI",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%MC",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%BLV",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LU",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%E",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HÖ",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HM",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%CR",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%BML",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%SÖG",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%MRU",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%BHB",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%RB",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%BÅA",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%CK",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "%CK",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "ETS",
+      "UnitId": "ETS-101",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "CPH",
+      "ViaStations": [
+       "CPH",
+       "%MC"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:42:12",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "UP",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "50173",
+    "PublicTrainId": "50173",
+    "TOC": "DSB",
+    "Product": "IC",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:45:00",
+    "ScheduleTimeArrival": "29-09-2026 18:35:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:45:00",
+    "EstimatedTimeArrival": "29-09-2026 18:35:00",
+    "EstimatedTimeDeparture": "29-09-2026 18:45:00",
+    "DelayTime": "29-09-2026 18:45:00",
+    "TargetStation": [],
+    "TrackCurrent": "8",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "VAL",
+        "ExpectedDateTime": "29-09-2026 18:48:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:00:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:12:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RG",
+        "ExpectedDateTime": "29-09-2026 19:29:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SO",
+        "ExpectedDateTime": "29-09-2026 19:39:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SG",
+        "ExpectedDateTime": "29-09-2026 19:48:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KØ",
+        "ExpectedDateTime": "29-09-2026 19:58:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NG",
+        "ExpectedDateTime": "29-09-2026 20:10:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "LV",
+        "ExpectedDateTime": "29-09-2026 20:20:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OD",
+        "ExpectedDateTime": "29-09-2026 20:28:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "MD",
+        "ExpectedDateTime": "29-09-2026 20:53:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "FA",
+        "ExpectedDateTime": "29-09-2026 21:02:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "FA",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "ER",
+      "UnitId": "ER-21",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "VAL",
+      "ViaStations": [
+       "VAL",
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:33:57",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "UP",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "4473",
+    "PublicTrainId": "4473",
+    "TOC": "DSB",
+    "Product": "RØ",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:47:00",
+    "ScheduleTimeArrival": "01-01-0001 00:00:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:47:00",
+    "EstimatedTimeArrival": "29-09-2026 18:47:00",
+    "EstimatedTimeDeparture": "29-09-2026 18:47:00",
+    "DelayTime": "29-09-2026 18:47:00",
+    "TargetStation": [],
+    "TrackCurrent": "5",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "NEL",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "ØLB",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJ",
+        "ExpectedDateTime": "29-09-2026 19:13:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HF",
+        "ExpectedDateTime": "29-09-2026 19:23:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TH",
+        "ExpectedDateTime": "29-09-2026 19:29:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HZ",
+        "ExpectedDateTime": "29-09-2026 19:35:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OL",
+        "ExpectedDateTime": "29-09-2026 19:42:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆN",
+        "ExpectedDateTime": "29-09-2026 19:47:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 19:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "EB",
+      "UnitId": "EB-1",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "NEL",
+      "ViaStations": [
+       "NEL",
+       "KJN"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": "2026-09-29T00:00:00",
+      "PreTrainTrainNumber": "3473",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "NEL",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "ØLB",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJ",
+        "ExpectedDateTime": "29-09-2026 19:13:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HF",
+        "ExpectedDateTime": "29-09-2026 19:23:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TH",
+        "ExpectedDateTime": "29-09-2026 19:29:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HZ",
+        "ExpectedDateTime": "29-09-2026 19:35:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OL",
+        "ExpectedDateTime": "29-09-2026 19:42:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆN",
+        "ExpectedDateTime": "29-09-2026 19:47:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 19:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "B",
+      "UnitId": "B-14",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "NEL",
+      "ViaStations": [
+       "NEL",
+       "KJN"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": "2026-09-29T00:00:00",
+      "PreTrainTrainNumber": "3473",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "NEL",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "ØLB",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJ",
+        "ExpectedDateTime": "29-09-2026 19:13:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HF",
+        "ExpectedDateTime": "29-09-2026 19:23:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TH",
+        "ExpectedDateTime": "29-09-2026 19:29:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HZ",
+        "ExpectedDateTime": "29-09-2026 19:35:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OL",
+        "ExpectedDateTime": "29-09-2026 19:42:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆN",
+        "ExpectedDateTime": "29-09-2026 19:47:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 19:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "B",
+      "UnitId": "B-13",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "NEL",
+      "ViaStations": [
+       "NEL",
+       "KJN"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": "2026-09-29T00:00:00",
+      "PreTrainTrainNumber": "3473",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "NEL",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "ØLB",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJ",
+        "ExpectedDateTime": "29-09-2026 19:13:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HF",
+        "ExpectedDateTime": "29-09-2026 19:23:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TH",
+        "ExpectedDateTime": "29-09-2026 19:29:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HZ",
+        "ExpectedDateTime": "29-09-2026 19:35:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OL",
+        "ExpectedDateTime": "29-09-2026 19:42:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆN",
+        "ExpectedDateTime": "29-09-2026 19:47:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 19:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "BK",
+      "UnitId": "BK-12",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "NEL",
+      "ViaStations": [
+       "NEL",
+       "KJN"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": "2026-09-29T00:00:00",
+      "PreTrainTrainNumber": "3473",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "NEL",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "ØLB",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KJ",
+        "ExpectedDateTime": "29-09-2026 19:13:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HF",
+        "ExpectedDateTime": "29-09-2026 19:23:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TH",
+        "ExpectedDateTime": "29-09-2026 19:29:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HZ",
+        "ExpectedDateTime": "29-09-2026 19:35:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OL",
+        "ExpectedDateTime": "29-09-2026 19:42:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆN",
+        "ExpectedDateTime": "29-09-2026 19:47:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 19:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "ABS",
+      "UnitId": "ABS-11",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "NEL",
+      "ViaStations": [
+       "NEL",
+       "KJN"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": "2026-09-29T00:00:00",
+      "PreTrainTrainNumber": "3473",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [
+     "3473"
+    ],
+    "PostTrain": [],
+    "PreTrainStationId": "KH",
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": true,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:45:02",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "Origin",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "1113",
+    "PublicTrainId": "1113",
+    "TOC": "VR Øresund AB",
+    "Product": "ØP",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:49:00",
+    "ScheduleTimeArrival": "29-09-2026 18:44:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:49:00",
+    "EstimatedTimeArrival": "29-09-2026 18:47:16",
+    "EstimatedTimeDeparture": "29-09-2026 18:49:00",
+    "DelayTime": "29-09-2026 18:49:00",
+    "TargetStation": [],
+    "TrackCurrent": "3",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:55:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "KK",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "%HM",
+      "UnitType": "ETS",
+      "UnitId": "ETS-201",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 18:55:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "KK",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "%KAC",
+      "UnitType": "ETS",
+      "UnitId": "ETS-101",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:45:32",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "DOWN",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "2026-09-29T18:33:20.1522831+02:00",
+    "AwaitsTimeEndTime": "2026-09-29T18:33:54.7719349+02:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "70071",
+    "PublicTrainId": "70071",
+    "TOC": "DSB",
+    "Product": "L",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:52:00",
+    "ScheduleTimeArrival": "29-09-2026 18:40:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:52:00",
+    "EstimatedTimeArrival": "29-09-2026 18:40:00",
+    "EstimatedTimeDeparture": "29-09-2026 18:52:00",
+    "DelayTime": "29-09-2026 18:52:00",
+    "TargetStation": [],
+    "TrackCurrent": "4",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "OD",
+        "ExpectedDateTime": "29-09-2026 20:03:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "FA",
+        "ExpectedDateTime": "29-09-2026 20:34:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VJ",
+        "ExpectedDateTime": "29-09-2026 20:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HS",
+        "ExpectedDateTime": "29-09-2026 21:22:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SD",
+        "ExpectedDateTime": "29-09-2026 21:38:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "AR",
+        "ExpectedDateTime": "29-09-2026 21:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "AR",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "CPH",
+      "UnitType": "MFA",
+      "UnitId": "MFA-81",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "OD",
+      "ViaStations": [
+       "OD",
+       "FA"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "OD",
+        "ExpectedDateTime": "29-09-2026 20:03:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "FA",
+        "ExpectedDateTime": "29-09-2026 20:34:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VJ",
+        "ExpectedDateTime": "29-09-2026 20:51:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HS",
+        "ExpectedDateTime": "29-09-2026 21:22:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SD",
+        "ExpectedDateTime": "29-09-2026 21:38:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "AR",
+        "ExpectedDateTime": "29-09-2026 21:52:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HA",
+        "ExpectedDateTime": "29-09-2026 22:28:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "LG",
+        "ExpectedDateTime": "29-09-2026 22:36:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RD",
+        "ExpectedDateTime": "29-09-2026 22:44:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HB",
+        "ExpectedDateTime": "29-09-2026 23:00:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SØ",
+        "ExpectedDateTime": "29-09-2026 23:12:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "AB",
+        "ExpectedDateTime": "29-09-2026 23:28:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "AB",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "CPH",
+      "UnitType": "MFA",
+      "UnitId": "MFA-71",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "OD",
+      "ViaStations": [
+       "OD",
+       "FA"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": "2026-09-29T00:00:00+02:00",
+      "PostTrainTrainNumber": "74171",
+      "PostTrainStationId": "AR",
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "29-09-2026 18:39:30",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "2026-09-29T18:29:31.3591962+02:00",
+    "AwaitsTimeEndTime": "2026-09-29T18:32:14.8578+02:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "51573",
+    "PublicTrainId": "51573",
+    "TOC": "DSB",
+    "Product": "RØ",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:54:00",
+    "ScheduleTimeArrival": "29-09-2026 18:50:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:54:00",
+    "EstimatedTimeArrival": "29-09-2026 18:50:58",
+    "EstimatedTimeDeparture": "29-09-2026 18:54:00",
+    "DelayTime": "29-09-2026 18:54:00",
+    "TargetStation": [],
+    "TrackCurrent": "8",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:05:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:17:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HK",
+        "ExpectedDateTime": "29-09-2026 19:41:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RT",
+        "ExpectedDateTime": "29-09-2026 19:49:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KS",
+        "ExpectedDateTime": "29-09-2026 19:54:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "MØ",
+        "ExpectedDateTime": "29-09-2026 19:58:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "JY",
+        "ExpectedDateTime": "29-09-2026 20:06:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SE",
+        "ExpectedDateTime": "29-09-2026 20:12:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KBØ",
+        "ExpectedDateTime": "29-09-2026 20:20:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KB",
+        "ExpectedDateTime": "29-09-2026 20:25:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "KB",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "MG",
+      "UnitId": "MG-11",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "RO",
+      "ViaStations": [
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "01-01-0001 00:00:00",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "UP",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "52550",
+    "PublicTrainId": "52550",
+    "TOC": "DSB",
+    "Product": "RØ",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:55:00",
+    "ScheduleTimeArrival": "29-09-2026 18:50:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:55:00",
+    "EstimatedTimeArrival": "29-09-2026 18:50:00",
+    "EstimatedTimeDeparture": "29-09-2026 18:55:00",
+    "DelayTime": "29-09-2026 18:55:00",
+    "TargetStation": [],
+    "TrackCurrent": "1",
+    "TrackPrevious": "2",
+    "TrackOriginal": "2",
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:57:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 19:01:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 19:07:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 19:12:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:17:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:21:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:25:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:29:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:33:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:41:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:45:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:50:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HK",
+      "UnitType": "ER",
+      "UnitId": "ER-11",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 18:57:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 19:01:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HL",
+        "ExpectedDateTime": "29-09-2026 19:07:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KL",
+        "ExpectedDateTime": "29-09-2026 19:12:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SÅ",
+        "ExpectedDateTime": "29-09-2026 19:17:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VB",
+        "ExpectedDateTime": "29-09-2026 19:21:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RU",
+        "ExpectedDateTime": "29-09-2026 19:25:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "OK",
+        "ExpectedDateTime": "29-09-2026 19:29:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NI",
+        "ExpectedDateTime": "29-09-2026 19:33:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HUM",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GÆ",
+        "ExpectedDateTime": "29-09-2026 19:41:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "SQ",
+        "ExpectedDateTime": "29-09-2026 19:45:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HG",
+        "ExpectedDateTime": "29-09-2026 19:50:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "HG",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HK",
+      "UnitType": "ER",
+      "UnitId": "ER-21",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "01-01-0001 00:00:00",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "DOWN",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "52273",
+    "PublicTrainId": "52273",
+    "TOC": "DSB",
+    "Product": "RØ",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:57:00",
+    "ScheduleTimeArrival": "29-09-2026 18:53:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:57:00",
+    "EstimatedTimeArrival": "29-09-2026 18:53:00",
+    "EstimatedTimeDeparture": "29-09-2026 18:57:00",
+    "DelayTime": "29-09-2026 18:57:00",
+    "TargetStation": [],
+    "TrackCurrent": "7",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "VAL",
+        "ExpectedDateTime": "29-09-2026 19:00:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:09:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HH",
+        "ExpectedDateTime": "29-09-2026 19:15:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TRK",
+        "ExpectedDateTime": "29-09-2026 19:20:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:24:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VY",
+        "ExpectedDateTime": "29-09-2026 19:32:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "BO",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RG",
+        "ExpectedDateTime": "29-09-2026 19:46:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GZ",
+        "ExpectedDateTime": "29-09-2026 19:53:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 20:02:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "EB",
+      "UnitId": "EB-1",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "VAL",
+      "ViaStations": [
+       "VAL",
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "VAL",
+        "ExpectedDateTime": "29-09-2026 19:00:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:09:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HH",
+        "ExpectedDateTime": "29-09-2026 19:15:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TRK",
+        "ExpectedDateTime": "29-09-2026 19:20:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:24:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VY",
+        "ExpectedDateTime": "29-09-2026 19:32:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "BO",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RG",
+        "ExpectedDateTime": "29-09-2026 19:46:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GZ",
+        "ExpectedDateTime": "29-09-2026 19:53:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 20:02:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "B",
+      "UnitId": "B-14",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "VAL",
+      "ViaStations": [
+       "VAL",
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "VAL",
+        "ExpectedDateTime": "29-09-2026 19:00:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:09:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HH",
+        "ExpectedDateTime": "29-09-2026 19:15:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TRK",
+        "ExpectedDateTime": "29-09-2026 19:20:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:24:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VY",
+        "ExpectedDateTime": "29-09-2026 19:32:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "BO",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RG",
+        "ExpectedDateTime": "29-09-2026 19:46:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GZ",
+        "ExpectedDateTime": "29-09-2026 19:53:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 20:02:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "B",
+      "UnitId": "B-13",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "VAL",
+      "ViaStations": [
+       "VAL",
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "VAL",
+        "ExpectedDateTime": "29-09-2026 19:00:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:09:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HH",
+        "ExpectedDateTime": "29-09-2026 19:15:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TRK",
+        "ExpectedDateTime": "29-09-2026 19:20:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:24:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VY",
+        "ExpectedDateTime": "29-09-2026 19:32:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "BO",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RG",
+        "ExpectedDateTime": "29-09-2026 19:46:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GZ",
+        "ExpectedDateTime": "29-09-2026 19:53:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 20:02:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "BK",
+      "UnitId": "BK-12",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "VAL",
+      "ViaStations": [
+       "VAL",
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "VAL",
+        "ExpectedDateTime": "29-09-2026 19:00:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HTÅ",
+        "ExpectedDateTime": "29-09-2026 19:09:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "HH",
+        "ExpectedDateTime": "29-09-2026 19:15:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TRK",
+        "ExpectedDateTime": "29-09-2026 19:20:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RO",
+        "ExpectedDateTime": "29-09-2026 19:24:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "VY",
+        "ExpectedDateTime": "29-09-2026 19:32:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "BO",
+        "ExpectedDateTime": "29-09-2026 19:37:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "RG",
+        "ExpectedDateTime": "29-09-2026 19:46:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "GZ",
+        "ExpectedDateTime": "29-09-2026 19:53:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "NÆ",
+        "ExpectedDateTime": "29-09-2026 20:02:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "NÆ",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "HG",
+      "UnitType": "ABS",
+      "UnitId": "ABS-11",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "VAL",
+      "ViaStations": [
+       "VAL",
+       "RO"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "01-01-0001 00:00:00",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "UP",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "2026-09-29T17:58:46.2624769+02:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "1118",
+    "PublicTrainId": "1118",
+    "TOC": "VR Øresund AB",
+    "Product": "ØP",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 18:59:00",
+    "ScheduleTimeArrival": "29-09-2026 18:56:00",
+    "ScheduleTimeDeparture": "29-09-2026 18:59:00",
+    "EstimatedTimeArrival": "29-09-2026 18:56:00",
+    "EstimatedTimeDeparture": "29-09-2026 18:59:00",
+    "DelayTime": "29-09-2026 18:59:00",
+    "TargetStation": [],
+    "TrackCurrent": "5",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "ØRE",
+        "ExpectedDateTime": "29-09-2026 19:06:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TÅT",
+        "ExpectedDateTime": "29-09-2026 19:09:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "CPH",
+        "ExpectedDateTime": "29-09-2026 19:13:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HIE",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%TRI",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%MC",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LU",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LKÖ",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HBGB",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HB",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "%HB",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "ETS",
+      "UnitId": "ETS-101",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "CPH",
+      "ViaStations": [
+       "CPH",
+       "%MC"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "ØRE",
+        "ExpectedDateTime": "29-09-2026 19:06:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "TÅT",
+        "ExpectedDateTime": "29-09-2026 19:09:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "CPH",
+        "ExpectedDateTime": "29-09-2026 19:13:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HIE",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%TRI",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%MC",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LU",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%LKÖ",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HBGB",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "%HB",
+        "ExpectedDateTime": null,
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "%HB",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "KK",
+      "UnitType": "ETS",
+      "UnitId": "ETS-201",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": "CPH",
+      "ViaStations": [
+       "CPH",
+       "%MC"
+      ],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "01-01-0001 00:00:00",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "UP",
+    "DepartureDirection": "UP",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   },
+   {
+    "TrainId": "1115",
+    "PublicTrainId": "1115",
+    "TOC": "VR Øresund AB",
+    "Product": "ØP",
+    "LineName": null,
+    "ScheduleTime": "29-09-2026 19:04:00",
+    "ScheduleTimeArrival": "29-09-2026 18:58:00",
+    "ScheduleTimeDeparture": "29-09-2026 19:04:00",
+    "EstimatedTimeArrival": "29-09-2026 18:58:00",
+    "EstimatedTimeDeparture": "29-09-2026 19:04:00",
+    "DelayTime": "29-09-2026 19:04:00",
+    "TargetStation": [],
+    "TrackCurrent": "1",
+    "TrackPrevious": null,
+    "TrackOriginal": null,
+    "IsCancelled": false,
+    "IsCancelledArrival": false,
+    "IsCancelledDeparture": false,
+    "Routes": [
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "KK",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "%HB",
+      "UnitType": "ETS",
+      "UnitId": "ETS-201",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     },
+     {
+      "Stations": [
+       {
+        "StationId": "KN",
+        "ExpectedDateTime": "29-09-2026 19:06:30",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       },
+       {
+        "StationId": "KK",
+        "ExpectedDateTime": "29-09-2026 19:10:00",
+        "IsCancelledArrival": false,
+        "IsCancelledDeparture": false,
+        "IsCancelled": false
+       }
+      ],
+      "DestinationStationId": "KK",
+      "OriginalDestinationStationId": null,
+      "OriginStationId": "%HB",
+      "UnitType": "ETS",
+      "UnitId": "ETS-101",
+      "NotAccessibleToPassengers": false,
+      "Remarks": [],
+      "ViaStation": null,
+      "ViaStations": [],
+      "GeneratedBy": "Planstatus",
+      "PreTrainScheduleDate": null,
+      "PreTrainTrainNumber": "",
+      "PostTrainScheduleDate": null,
+      "PostTrainTrainNumber": "",
+      "PostTrainStationId": null,
+      "CancelledStations": [],
+      "InternalId": null
+     }
+    ],
+    "PreTrain": [],
+    "PostTrain": [],
+    "PreTrainStationId": null,
+    "MayDepartEarly": false,
+    "IsFirstCommercialStop": false,
+    "IsLastStop": false,
+    "InformationType": "NORMAL",
+    "TrainArrived": "01-01-0001 00:00:00",
+    "TrainDeparted": "01-01-0001 00:00:00",
+    "StopType": "CommercialNormalStop",
+    "ArrivalDirection": "DOWN",
+    "DepartureDirection": "DOWN",
+    "TrainType": "Passenger",
+    "ChangesTo": [],
+    "ForceInSameTrackWith": "",
+    "InSameTrackWith": [],
+    "Remark": "",
+    "ForecastSource": "TOGSTATUS",
+    "TrainPrioritized": false,
+    "AwaitsTime": false,
+    "AwaitsTimeStartTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEndTime": "0001-01-01T00:00:00",
+    "AwaitsTimeEnabledGlobally": true
+   }
+  ],
+  "StationId": "KH",
+  "TrackId": null,
+  "Type": "DEPARTURE",
+  "Created": "2026-09-29T18:45:43.5855814+02:00",
+  "OccupiedTrackSections": null
+ },
+ "pico": [
+  {
+   "station_code": "KH",
+   "header": "Færre tog og længere rejsetid mellem København H og Næstved via Køge",
+   "body": "Der er færre tog og længere rejsetid mellem København H og Næstved via Køge, da vi kører med nedsat hastighed mellem Tureby og Haslev. Vi forventer at køre normalt igen kl.19.00. Mellem København H og Køge henviser vi til S-tog. Søg din rejse på Rejseplanen",
+   "info_type": "INFOBOX_URGENT",
+   "icon": "emergency",
+   "hash": 15433724962759664778,
+   "mittog_popup_urgent_notices": true,
+   "updated": "2026-09-29T16:07:34.482987+00:00",
+   "uuid": "323cbf91247d45b5a19d44a6d09bf055"
+  },
+  {
+   "station_code": "KH",
+   "header": "Rejsetidsgarantien træder i kraft ved +30 minutters forsinkelse​",
+   "body": "Er du mere end 30 minutter forsinket træder DSB’s Rejsetidsgaranti i kraft. Du kan søge om kompensation for din DSB-billet på DSB’s hjemmeside. Husk, hvis du forlader perronen, kan du fortsat orientere dig om togtrafikken på Rejseplanen",
+   "info_type": "INFOBOX_URGENT",
+   "icon": "emergency",
+   "hash": 266479148617237942,
+   "mittog_popup_urgent_notices": true,
+   "updated": "2026-09-29T16:07:49.488078+00:00",
+   "uuid": "3ef20b6d100c48069fcf5e87e66997de"
+  }
+ ],
+ "remarks": []
+}

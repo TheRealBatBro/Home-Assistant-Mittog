@@ -1,0 +1,14 @@
+{
+  "entity": {
+    "sensor": {
+      "next_departure": { "default": "mdi:train" },
+      "second_departure": { "default": "mdi:train-variant" },
+      "minutes_until": { "default": "mdi:timer-sand" },
+      "delay": { "default": "mdi:clock-alert-outline" },
+      "notices": { "default": "mdi:information-outline" }
+    },
+    "binary_sensor": {
+      "disruption": { "default": "mdi:train", "state": { "on": "mdi:alert-octagon" } }
+    }
+  }
+}

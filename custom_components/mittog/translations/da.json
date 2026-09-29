@@ -1,0 +1,183 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tilføj station",
+        "description": "Vælg hvilken afgangstavle på mittog.dk du vil bruge: S-tog eller Tog (regional- og fjerntog). Store stationer som København H har begge.",
+        "data": {
+          "service": "Tavle"
+        },
+        "data_description": {
+          "service": "S-tog = linje A, B, Bx, C, E, F, H. Tog = DSB Re, InterCity, Øresundståg, Lokaltog, Arriva m.fl."
+        }
+      },
+      "station": {
+        "title": "Vælg station",
+        "description": "Skriv stationens navn eller en del af det (fx \"Nørre\"). Du kan også skrive stationskoden fra mittog.dk-adressen, fx VNG fra mittog.dk/da/departures/VNG/stog/.",
+        "data": {
+          "query": "Stationsnavn eller kode"
+        },
+        "data_description": {
+          "query": "Hvis flere stationer passer, vælger du den rigtige på næste side."
+        }
+      },
+      "pick_station": {
+        "title": "Vælg station",
+        "description": "{count} stationer passer. Vælg din:",
+        "data": {
+          "station": "Station"
+        }
+      },
+      "direction": {
+        "title": "Retning og filtre for {station}",
+        "description": "Der er {count} afgange på tavlen lige nu. Lad alt være tomt for at se alle afgange. Vælg en eller flere stationer under **Mod** for kun at beholde tog der stopper der, fx mod København H. Tilføj samme station igen senere for at følge den anden retning for sig.",
+        "data": {
+          "towards": "Mod (retning)",
+          "lines": "Linjer / togtyper",
+          "tracks": "Spor",
+          "max_departures": "Antal afgange",
+          "delay_threshold": "Forsinkelsesgrænse",
+          "hide_cancelled": "Skjul aflyste afgange"
+        },
+        "data_description": {
+          "towards": "Vis kun tog der stopper ved en af disse stationer efter denne. Tom = begge retninger.",
+          "lines": "Kun disse linjer (S-tog: A, B, C …) eller togtyper (Re, IC, ICL …). Tom = alle.",
+          "tracks": "Kommaseparerede spornumre, fx 1, 2. Tom = alle.",
+          "max_departures": "Hvor mange kommende afgange der gemmes i attributten departures.",
+          "delay_threshold": "Driftsforstyrrelse-sensoren tænder når en vist afgang er så meget forsinket (eller aflyst).",
+          "hide_cancelled": "Udelad aflyste tog helt i stedet for at markere dem."
+        }
+      }
+    },
+    "error": {
+      "unknown_station": "Ukendt station. Vælg en fra listen.",
+      "towards_self": "En station kan ikke være sin egen retning.",
+      "no_match": "Ingen station på denne tavle passer. Tjek stavemåden, eller prøv den anden tavle (S-tog / Tog)."
+    },
+    "abort": {
+      "already_configured_hub": "Mittog er allerede sat op. Tilføj flere stationer med knappen **Tilføj station** på Mittog-integrationens side.",
+      "single_instance_allowed": "Mittog er allerede sat op. Tilføj flere stationer med knappen **Tilføj station** på Mittog-integrationens side."
+    }
+  },
+  "config_subentries": {
+    "station": {
+      "entry_type": "Station",
+      "initiate_flow": {
+        "user": "Tilføj station"
+      },
+      "step": {
+        "user": {
+          "title": "Tilføj station",
+          "description": "Vælg hvilken afgangstavle på mittog.dk du vil bruge: S-tog eller Tog (regional- og fjerntog). Store stationer som København H har begge.",
+          "data": {
+            "service": "Tavle"
+          },
+          "data_description": {
+            "service": "S-tog = linje A, B, Bx, C, E, F, H. Tog = DSB Re, InterCity, Øresundståg, Lokaltog, Arriva m.fl."
+          }
+        },
+        "station": {
+          "title": "Vælg station",
+          "description": "Skriv stationens navn eller en del af det (fx \"Nørre\"). Du kan også skrive stationskoden fra mittog.dk-adressen, fx VNG fra mittog.dk/da/departures/VNG/stog/.",
+          "data": {
+            "query": "Stationsnavn eller kode"
+          },
+          "data_description": {
+            "query": "Hvis flere stationer passer, vælger du den rigtige på næste side."
+          }
+        },
+        "pick_station": {
+          "title": "Vælg station",
+          "description": "{count} stationer passer. Vælg din:",
+          "data": {
+            "station": "Station"
+          }
+        },
+        "direction": {
+          "title": "Retning og filtre for {station}",
+          "description": "Der er {count} afgange på tavlen lige nu. Lad alt være tomt for at se alle afgange. Vælg en eller flere stationer under **Mod** for kun at beholde tog der stopper der, fx mod København H. Tilføj samme station igen senere for at følge den anden retning for sig.",
+          "data": {
+            "towards": "Mod (retning)",
+            "lines": "Linjer / togtyper",
+            "tracks": "Spor",
+            "max_departures": "Antal afgange",
+            "delay_threshold": "Forsinkelsesgrænse",
+            "hide_cancelled": "Skjul aflyste afgange"
+          },
+          "data_description": {
+            "towards": "Vis kun tog der stopper ved en af disse stationer efter denne. Tom = begge retninger.",
+            "lines": "Kun disse linjer (S-tog: A, B, C …) eller togtyper (Re, IC, ICL …). Tom = alle.",
+            "tracks": "Kommaseparerede spornumre, fx 1, 2. Tom = alle.",
+            "max_departures": "Hvor mange kommende afgange der gemmes i attributten departures.",
+            "delay_threshold": "Driftsforstyrrelse-sensoren tænder når en vist afgang er så meget forsinket (eller aflyst).",
+            "hide_cancelled": "Udelad aflyste tog helt i stedet for at markere dem."
+          }
+        },
+        "reconfigure": {
+          "title": "Ret retning og filtre for {station}",
+          "description": "Der er {count} afgange på tavlen lige nu. Lad alt være tomt for at se alle afgange. Vælg en eller flere stationer under **Mod** for kun at beholde tog der stopper der, fx mod København H. Tilføj samme station igen senere for at følge den anden retning for sig.",
+          "data": {
+            "towards": "Mod (retning)",
+            "lines": "Linjer / togtyper",
+            "tracks": "Spor",
+            "max_departures": "Antal afgange",
+            "delay_threshold": "Forsinkelsesgrænse",
+            "hide_cancelled": "Skjul aflyste afgange"
+          },
+          "data_description": {
+            "towards": "Vis kun tog der stopper ved en af disse stationer efter denne. Tom = begge retninger.",
+            "lines": "Kun disse linjer (S-tog: A, B, C …) eller togtyper (Re, IC, ICL …). Tom = alle.",
+            "tracks": "Kommaseparerede spornumre, fx 1, 2. Tom = alle.",
+            "max_departures": "Hvor mange kommende afgange der gemmes i attributten departures.",
+            "delay_threshold": "Driftsforstyrrelse-sensoren tænder når en vist afgang er så meget forsinket (eller aflyst).",
+            "hide_cancelled": "Udelad aflyste tog helt i stedet for at markere dem."
+          }
+        }
+      },
+      "error": {
+        "unknown_station": "Ukendt station. Vælg en fra listen.",
+        "towards_self": "En station kan ikke være sin egen retning.",
+        "no_match": "Ingen station på denne tavle passer. Tjek stavemåden, eller prøv den anden tavle (S-tog / Tog)."
+      },
+      "abort": {
+        "already_configured": "Stationen er allerede tilføjet med præcis disse filtre.",
+        "reconfigure_successful": "Stationen er opdateret."
+      }
+    }
+  },
+  "selector": {
+    "service": {
+      "options": {
+        "stog": "S-tog",
+        "tog": "Tog (regional- og fjerntog)"
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_departure": {
+        "name": "Næste afgang"
+      },
+      "second_departure": {
+        "name": "Efterfølgende afgang"
+      },
+      "minutes_until": {
+        "name": "Minutter til afgang"
+      },
+      "delay": {
+        "name": "Forsinkelse"
+      },
+      "notices": {
+        "name": "Meddelelser"
+      }
+    },
+    "binary_sensor": {
+      "disruption": {
+        "name": "Driftsforstyrrelse"
+      },
+      "connection": {
+        "name": "Live-forbindelse"
+      }
+    }
+  }
+}
