@@ -13,7 +13,7 @@ from homeassistant.helpers import device_registry as dr, entity_registry as er
 
 from custom_components.mittog.diagnostics import async_get_config_entry_diagnostics
 
-from .conftest import make_entry, push, station_data
+from .conftest import load, make_entry, push, push_message, station_data
 
 
 def _eid(hass: HomeAssistant, sub, key: str) -> str:
@@ -127,3 +127,45 @@ async def test_unload(hass: HomeAssistant) -> None:
     assert entry.state is ConfigEntryState.NOT_LOADED
     assert hub.streams == {}
     assert coordinator.stream.listener_count == 0
+
+
+async def test_train_missing_from_one_snapshot_is_kept(hass: HomeAssistant, frozen) -> None:
+    entry = make_entry(station_data("stog", "VNG", direction="UP"))
+    entry.add_to_hass(hass)
+    assert await hass.config_entries.async_setup(entry.entry_id)
+    await push(hass, entry, "stog", "VNG", "stog_vng.json")
+    (sub,) = entry.subentries.values()
+    eid = _eid(hass, sub, "second_departure")
+    assert hass.states.get(eid).state == "2026-09-29T17:12:00+00:00"
+
+    # The feed drops the 19:12 train from one snapshot: it stays on the board.
+    message = load("stog_vng.json")
+    message["data"]["Trains"] = [t for t in message["data"]["Trains"] if t["TrainId"] != "633159"]
+    frozen.tick(timedelta(seconds=30))
+    await push_message(hass, entry, "stog", "VNG", message)
+    assert hass.states.get(eid).state == "2026-09-29T17:12:00+00:00"
+
+    # Still gone after the grace period: dropped (and the 18:46 has left by now).
+    frozen.tick(timedelta(minutes=4))
+    await push_message(hass, entry, "stog", "VNG", message)
+    assert hass.states.get(_eid(hass, sub, "next_departure")).state == "2026-09-29T17:32:00+00:00"
+
+
+async def test_must_stop_at_with_missing_stop_list(hass: HomeAssistant) -> None:
+    entry = make_entry(station_data("stog", "VNG", direction="UP", towards=["ST"]))
+    entry.add_to_hass(hass)
+    assert await hass.config_entries.async_setup(entry.entry_id)
+    message = load("stog_vng.json")
+    up = [t for t in message["data"]["Trains"] if t["DepartureDirection"] == "UP"]
+    # First Klampenborg train: no stop list at all -> trust other Klampenborg trains.
+    up[0]["Routes"][0]["Stations"] = []
+    # Svanemøllen train: lists its stops and Stenløse isn't among them -> skips it.
+    up[2]["Routes"][0]["Stations"] = [s for s in up[2]["Routes"][0]["Stations"] if s["StationId"] != "ST"]
+    await push_message(hass, entry, "stog", "VNG", message)
+    (sub,) = entry.subentries.values()
+    deps = hass.states.get(_eid(hass, sub, "next_departure")).attributes["departures"]
+    assert [d["expected"][11:16] for d in deps] == ["18:46", "19:12"]
+
+    diag = await async_get_config_entry_diagnostics(hass, entry)
+    board = next(iter(diag["stations"].values()))["board"]
+    assert [b["shown"] for b in board if b["direction"] == "UP"] == [True, True, False]

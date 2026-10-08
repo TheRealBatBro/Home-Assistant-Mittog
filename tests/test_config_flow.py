@@ -239,3 +239,19 @@ async def test_reconfigure_old_towards_entry(hass: HomeAssistant, fetch) -> None
     sub = entry.subentries[sub.subentry_id]
     assert sub.title == "Vinge → København H"
     assert sub.data[CONF_DIRECTION] == "UP" and sub.data[CONF_TOWARDS] == []
+
+
+async def test_reconfigure_applies_to_running_station(hass: HomeAssistant, fetch) -> None:
+    entry = make_entry(station_data("stog", "VNG", direction="UP"))
+    entry.add_to_hass(hass)
+    await hass.config_entries.async_setup(entry.entry_id)
+    (sub,) = entry.subentries.values()
+    result = await entry.start_subentry_reconfigure_flow(hass, sub.subentry_id)
+    result = await hass.config_entries.subentries.async_configure(result["flow_id"], {CONF_DIRECTION: "UP"})
+    result = await hass.config_entries.subentries.async_configure(
+        result["flow_id"], {**FILTERS, CONF_TOWARDS: ["KH"]}
+    )
+    assert result["reason"] == "reconfigure_successful"
+    await hass.async_block_till_done()
+    coordinator = entry.runtime_data.coordinators[sub.subentry_id]
+    assert coordinator.towards == {"KH"}

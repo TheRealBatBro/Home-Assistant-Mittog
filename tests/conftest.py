@@ -96,8 +96,14 @@ def make_entry(*datas: dict[str, Any]) -> MockConfigEntry:
 
 
 async def push(hass: HomeAssistant, entry: MockConfigEntry, service: str, code: str, fixture: str) -> None:
+    await push_message(hass, entry, service, code, load(fixture))
+
+
+async def push_message(
+    hass: HomeAssistant, entry: MockConfigEntry, service: str, code: str, message: dict[str, Any]
+) -> None:
     stream = entry.runtime_data.streams[(service, code)]
-    stream.board = parse_board(load(fixture), code)
+    stream.board = parse_board(message, code)
     stream.last_message = datetime.now(TZ)
     stream.connected = True
     stream._notify()

@@ -291,7 +291,7 @@ actions:
       custom_components.mittog: debug
   ```
 
-  **Settings → Devices & services → Mittog → ⋮ → Download diagnostics** shows each connection and what each station keeps.
+  **Settings → Devices & services → Mittog → ⋮ → Download diagnostics** shows each connection, and for each station every train on the board with its stop list and whether it is shown. Attach it when reporting a missing train.
 
 ## How it works
 

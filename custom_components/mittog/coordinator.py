@@ -37,6 +37,9 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 TICK = timedelta(seconds=30)
+# A train missing from one snapshot before it has left is kept this long, so the
+# sensors don't flicker to unknown when the feed briefly drops it.
+REMEMBER = timedelta(minutes=3)
 
 type MittogConfigEntry = ConfigEntry[MittogHub]
 
@@ -80,6 +83,10 @@ class StationData:
         return [d for d in self.departures if not d.cancelled]
 
 
+def _key(departure: Departure) -> str:
+    return f"{departure.train_id}|{departure.scheduled.isoformat()}"
+
+
 def parse_filter(values: list[str] | str | None) -> set[str]:
     if not values:
         return set()
@@ -117,11 +124,26 @@ class StationCoordinator(DataUpdateCoordinator[StationData]):
         self.delay_threshold = int(data.get(CONF_DELAY_THRESHOLD, DEFAULT_DELAY_THRESHOLD))
         self.stream: BoardStream | None = None
         self._unsubs: list[CALLBACK_TYPE] = []
+        # Trains recently on the board: key -> (departure, last seen).
+        self._recent: dict[str, tuple[Departure, datetime]] = {}
+        # Stations seen on the way to each destination, learnt from trains that do
+        # list their stops; used for trains that arrive without a stop list.
+        self._route: dict[str, set[str]] = {}
+
+    def _stops_at_wanted(self, departure: Departure) -> bool:
+        if departure.calls_at(self.towards):
+            return True
+        if len([c for c in departure.stops if c not in departure.destinations]) > 0:
+            # The train lists its stops and the wanted station isn't one of them:
+            # it skips it (e.g. every other evening C train runs past Vinge).
+            return False
+        # No stop list: go by what other trains to the same destination stop at.
+        return any(self.towards & self._route.get(dest, set()) for dest in departure.destinations)
 
     def matches(self, departure: Departure) -> bool:
         if self.direction and departure.direction != self.direction:
             return False
-        if self.towards and not departure.calls_at(self.towards):
+        if self.towards and not self._stops_at_wanted(departure):
             return False
         if self.lines and departure.line.casefold() not in self.lines and departure.product.casefold() not in self.lines:
             return False
@@ -131,8 +153,31 @@ class StationCoordinator(DataUpdateCoordinator[StationData]):
             return False
         return True
 
+    def _learn(self, board: Board) -> None:
+        for dep in board.departures:
+            if len(dep.stops) > 1:
+                for dest in dep.destinations:
+                    self._route.setdefault(dest, set()).update(dep.stops)
+
+    def _with_recent(self, departures: list[Departure], now: datetime) -> list[Departure]:
+        """Add back trains that dropped out of this snapshot but haven't left yet."""
+        current = {_key(d) for d in departures}
+        for dep in departures:
+            self._recent[_key(dep)] = (dep, now)
+        kept = list(departures)
+        for key, (dep, seen) in list(self._recent.items()):
+            if key in current:
+                continue
+            if now - seen > REMEMBER or dep.expected < now:
+                del self._recent[key]
+            else:
+                kept.append(dep)
+        kept.sort(key=lambda d: d.expected)
+        return kept
+
     def build(self, board: Board, now: datetime, connected: bool) -> StationData:
-        live = upcoming(board.departures, now, DEPARTED_GRACE)
+        self._learn(board)
+        live = upcoming(self._with_recent(board.departures, now), now, DEPARTED_GRACE)
         chosen = [d for d in live if self.matches(d)]
         return StationData(
             departures=chosen[: self.max_departures],
@@ -196,4 +241,19 @@ class StationCoordinator(DataUpdateCoordinator[StationData]):
             "last_message": stream.last_message.isoformat() if stream and stream.last_message else None,
             "board_departures": len(stream.board.departures) if stream and stream.board else None,
             "shown": [d.as_dict() for d in self.data.departures] if self.data else None,
+            # Every train on the board and why it is or isn't shown, for bug reports.
+            "board": [
+                {
+                    "expected": d.expected.isoformat(),
+                    "line": d.line,
+                    "destinations": d.destinations,
+                    "direction": d.direction,
+                    "track": d.track,
+                    "cancelled": d.cancelled,
+                    "departed": d.departed,
+                    "stops": d.stops,
+                    "shown": self.matches(d),
+                }
+                for d in (stream.board.departures if stream and stream.board else [])
+            ],
         }
