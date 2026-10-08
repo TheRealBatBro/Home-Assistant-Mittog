@@ -33,6 +33,12 @@ Live train departures from [mittog.dk](https://mittog.dk/da/departures/VNG/stog/
 
 Requires Home Assistant **2025.10** or newer.
 
+### Updating
+
+New versions are published as [GitHub releases](https://github.com/TheRealBatBro/Home-Assistant-Mittog/releases). With HACS, Home Assistant shows them under **Settings → Updates** (*Mittog update*) with the release notes. Click **Install**, then restart Home Assistant. What changed in each version is in [CHANGELOG.md](CHANGELOG.md).
+
+> Installed Mittog before 1.2.0? HACS tracked commits until then. Open **HACS → Mittog → ⋮ → Update information** once (or wait for HACS's next check), and from 1.2.0 on, updates show up in Settings → Updates.
+
 ---
 
 ## 2. Add your first station
