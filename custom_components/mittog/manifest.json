@@ -1,13 +1,14 @@
 {
   "domain": "mittog",
   "name": "Mittog",
-  "codeowners": ["@TheRealBatBro"],
+  "codeowners": [
+    "@TheRealBatBro"
+  ],
   "config_flow": true,
   "documentation": "https://github.com/TheRealBatBro/Home-Assistant-Mittog",
   "integration_type": "service",
   "iot_class": "cloud_push",
   "issue_tracker": "https://github.com/TheRealBatBro/Home-Assistant-Mittog/issues",
   "requirements": [],
-  "single_config_entry": true,
-  "version": "1.1.0"
+  "version": "1.1.1"
 }

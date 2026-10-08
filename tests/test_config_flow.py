@@ -120,10 +120,32 @@ async def test_danish_labels(hass: HomeAssistant, fetch) -> None:
     assert _labels(result, CONF_DIRECTION)[1:] == ["Mod Frederikssund", "Begge retninger"]
 
 
-async def test_only_one_hub(hass: HomeAssistant) -> None:
-    make_entry().add_to_hass(hass)
+async def test_add_integration_again_adds_station_to_hub(hass: HomeAssistant, fetch) -> None:
+    """Starting from "Add integration" / "Add device" with a hub joins the existing hub."""
+    entry = make_entry(station_data("stog", "VNG", direction="UP"))
+    entry.add_to_hass(hass)
+    await hass.config_entries.async_setup(entry.entry_id)
+
     result = await hass.config_entries.flow.async_init(DOMAIN, context={"source": config_entries.SOURCE_USER})
+    assert result["step_id"] == "user"
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], {CONF_STATION: "Vinge (S-tog)"})
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], {CONF_DIRECTION: "DOWN"})
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], FILTERS)
     assert result["type"] is FlowResultType.ABORT
+    assert result["reason"] == "station_added"
+    assert result["description_placeholders"] == {"title": "Vinge → Frederikssund"}
+    await hass.async_block_till_done()
+
+    assert len(hass.config_entries.async_entries(DOMAIN)) == 1
+    assert sorted(s.title for s in entry.subentries.values()) == ["Vinge UP", "Vinge → Frederikssund"]
+    assert len(entry.runtime_data.coordinators) == 2  # reloaded with the new station
+
+    # The same station and direction again is refused.
+    result = await hass.config_entries.flow.async_init(DOMAIN, context={"source": config_entries.SOURCE_USER})
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], {CONF_STATION: "Vinge (S-tog)"})
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], {CONF_DIRECTION: "DOWN"})
+    result = await hass.config_entries.flow.async_configure(result["flow_id"], FILTERS)
+    assert result["reason"] == "already_configured"
 
 
 async def test_feed_unreachable(hass: HomeAssistant) -> None:

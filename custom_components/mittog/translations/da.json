@@ -45,8 +45,8 @@
       "cannot_connect": "Kunne ikke få forbindelse til mittog.dk. Prøv igen om lidt."
     },
     "abort": {
-      "already_configured_hub": "Mittog er allerede sat op. Tilføj flere stationer med knappen **Tilføj station** på Mittog-integrationens side.",
-      "single_instance_allowed": "Mittog er allerede sat op. Tilføj flere stationer med knappen **Tilføj station** på Mittog-integrationens side."
+      "station_added": "**{title}** er tilføjet til Mittog.",
+      "already_configured": "Stationen er allerede tilføjet med denne retning og disse filtre."
     }
   },
   "config_subentries": {

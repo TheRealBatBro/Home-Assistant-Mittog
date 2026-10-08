@@ -45,8 +45,8 @@
       "cannot_connect": "Could not reach mittog.dk. Try again in a moment."
     },
     "abort": {
-      "already_configured_hub": "Mittog is already set up. Add more stations with the **Add station** button on the Mittog integration page.",
-      "single_instance_allowed": "Mittog is already set up. Add more stations with the **Add station** button on the Mittog integration page."
+      "station_added": "Added **{title}** to Mittog.",
+      "already_configured": "This station is already added with this direction and these filters."
     }
   },
   "config_subentries": {

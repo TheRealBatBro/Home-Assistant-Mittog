@@ -77,7 +77,7 @@ Press **Submit**. You now have a *Mittog* integration with one station, e.g. **V
 
 ## 3. Add more stations or the other direction
 
-Open **Settings → Devices & services → Mittog** and click **+ Add station** (top right). The steps are the same as above.
+Open **Settings → Devices & services → Mittog** and click **+ Add station** (top right). Starting again from **+ Add integration → Mittog** or **Devices → + Add device → Mittog** works too: the station is added to your existing Mittog. The steps are the same as above.
 
 | You want | Add |
 | --- | --- |

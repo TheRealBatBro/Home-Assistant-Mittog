@@ -23,6 +23,7 @@ from homeassistant.config_entries import (
     ConfigEntry,
     ConfigFlow,
     ConfigFlowResult,
+    ConfigSubentry,
     ConfigSubentryData,
     ConfigSubentryFlow,
     SubentryFlowResult,
@@ -246,8 +247,6 @@ class _StationSteps:
         )
 
     async def async_step_user(self, user_input: dict[str, Any] | None = None) -> Any:
-        if (abort := self._abort_before_start()) is not None:
-            return abort
         await self.hass.async_add_executor_job(stations.load_catalogue)
         errors: dict[str, str] = {}
         if user_input is not None:
@@ -260,9 +259,6 @@ class _StationSteps:
                     return await self.async_step_direction()
                 errors["base"] = "cannot_connect"
         return self.async_show_form(step_id="user", data_schema=self._station_schema(), errors=errors)
-
-    def _abort_before_start(self) -> Any:
-        return None
 
     async def _load_board(self) -> bool:
         try:
@@ -397,7 +393,7 @@ class _StationSteps:
 
 
 class MittogConfigFlow(_StationSteps, ConfigFlow, domain=DOMAIN):
-    """Create the hub together with its first station."""
+    """Create the hub with its first station, or add a station to the existing hub."""
 
     VERSION = 1
 
@@ -412,21 +408,30 @@ class MittogConfigFlow(_StationSteps, ConfigFlow, domain=DOMAIN):
     ) -> dict[str, type[ConfigSubentryFlow]]:
         return {SUBENTRY_STATION: StationSubentryFlow}
 
-    def _abort_before_start(self) -> ConfigFlowResult | None:
-        if self._async_current_entries():
-            return self.async_abort(reason="already_configured_hub")
-        return None
-
     def _finish(self, data: dict[str, Any]) -> ConfigFlowResult:
+        title = self._title(data)
+        unique_id = unique_id_for(data)
+        if hub := next(iter(self._async_current_entries(include_ignore=False)), None):
+            # Started from "Add integration" / "Add device" while the hub exists:
+            # the station joins the existing hub instead of making a second one.
+            if any(sub.unique_id == unique_id for sub in hub.subentries.values()):
+                return self.async_abort(reason="already_configured")
+            self.hass.config_entries.async_add_subentry(
+                hub,
+                ConfigSubentry(
+                    data=data,
+                    subentry_type=SUBENTRY_STATION,
+                    title=title,
+                    unique_id=unique_id,
+                ),
+            )
+            return self.async_abort(reason="station_added", description_placeholders={"title": title})
         return self.async_create_entry(
             title=HUB_TITLE,
             data={},
             subentries=[
                 ConfigSubentryData(
-                    subentry_type=SUBENTRY_STATION,
-                    title=self._title(data),
-                    unique_id=unique_id_for(data),
-                    data=data,
+                    subentry_type=SUBENTRY_STATION, title=title, unique_id=unique_id, data=data
                 )
             ],
         )
